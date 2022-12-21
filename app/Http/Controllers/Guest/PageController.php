@@ -11,8 +11,8 @@ class PageController extends Controller
     {
         return view('welcome');
     }
-    public function comics()
+    public function about()
     {
-        return view('comics');
+        return view('about');
     }
 }
