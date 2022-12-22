@@ -92,7 +92,7 @@ class ComicController extends Controller
         ];
         $comic->update($data);
 
-        return to_route('comics.index');
+        return to_route('comics.index')->with('message', "$comic->title update successfly");
     }
 
     /**
