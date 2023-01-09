@@ -4,6 +4,8 @@
 
 <div class="container mb-5">
     <h1 class="py-5"> Update comic: {{$comic->title}}</h1>
+    @include('partials.error')
+
     <form action="{{route('comics.update', $comic->id)}}" method="post" class="card p-3">
         @csrf
         @method('PUT')
